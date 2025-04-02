@@ -1,8 +1,8 @@
 // Массив фонов
 const backgrounds = [
-    './../images/fons/fon1.jpg',
-    './../images/fons/fon2.jpg',
-    './../images/fons/fon3.jpg'
+    './images/fons/fon1.jpg',
+    './images/fons/fon2.jpg',
+    './images/fons/fon3.jpg'
 ];
 
 let currentIndex = 0;
