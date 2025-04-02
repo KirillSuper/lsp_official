@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Colegtion - ЛСП</title>
+    <link rel="stylesheet" href="./../../Montserrat/stylesheet.css">
+    <link rel="stylesheet" href="./../styles/styleHeader.css">
+    <link rel="stylesheet" href="./../styles/styleTracks.css">
+    <link rel="icon" type="image/png" href="./../../images/logo/logoBlack.png">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo" id="logo">
+            <img src="./../../images/logo/logoWhite.png" alt="Логотип">
+        </div>
+    </header>
+    <main>
+        <section class="tracks-section">
+            <h2>Romantic Colegtion</h2>
+            <p>Одна из композиций альбома, «Именно такой ’15», рассказывает историю о том, как герой песни влюбляется в девушку, <br>
+                но она начинает ему надоедать. Боясь утратить яркость впечатлений, он решается убить её, чтобы сохранить в себе идеальные <br>
+                воспоминания. Затем он сбрасывает труп в море, а на следующий день сам тонет в нём.</p>
+            <div class="tracks-list" id="romanticColegtionTracks">
+                <!-- Треки добавлены через JavaScript -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="random-lyric"></div>
+        <p class="author">с. Олег Скай</p>
+        <p class="copyright">© 2025 Все права защищены. Использование материалов только с разрешения.</p>
+    </footer>
+    
+    <div class="audio-player" id="audioPlayer">
+        <div class="player-header">
+            <div class="track-title" id="trackTitle">Выберите трек</div>
+            <div class="player-controls">
+                <button class="minimize-button" id="minimizePlayer">
+                    <img src="./../../images/minimize.png" alt="Свернуть">
+                </button>
+                <button class="close-button" id="closePlayer">
+                    <img src="./../../images/close.png" alt="Закрыть">
+                </button>
+            </div>
+        </div>
+        <audio controls id="audioElement">
+            Ваш браузер не поддерживает элемент audio.
+        </audio>
+    </div>
+
+    <script type="module" src="./../scripts/romanticColegtion.js"></script>
+</body>
+</html>

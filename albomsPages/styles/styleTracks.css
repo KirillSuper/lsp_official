@@ -1,0 +1,228 @@
+.tracks-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.tracks-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+
+.tracks-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+.tracks-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-height: 900px;
+    overflow-y: auto;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.tracks-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tracks-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.tracks-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.tracks-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.track-item {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px rgba(66, 66, 66, 0.3);
+    width: 500px;
+    padding: 10px;
+    transition: all 0.4s ease;
+    margin-bottom: 10px;
+}
+
+.track-item:hover {
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.9);
+}
+
+.track-item:active {
+    transform: scale(0.9);
+    box-shadow: 5px 5px 4px rgba(66, 66, 66, 0.3);
+}
+
+.track-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.track-item .track-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.track-item .track-info h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.track-item .track-info .artist {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    margin-top: auto;
+}
+
+.random-lyric {
+    font-family: 'Marck Script', cursive;
+    font-size: 24px;
+    margin-bottom: 10px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.random-lyric.fade {
+    opacity: 0;
+}
+
+.author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #999;
+}
+
+.section-divider {
+    width: 35%;
+    height: 2px;
+    background-color: #000;
+    margin: 20px auto;
+}
+
+.section-divider-large {
+    width: 35%;
+    height: 2px;
+    background-color: #000;
+    margin: 40px auto;
+}
+
+
+.audio-player {
+    position: fixed;
+    bottom: -1000px;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 15px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    transition: bottom 0.2s ease-in-out;
+    z-index: 999;
+}
+
+.audio-player.show {
+    bottom: 0;
+}
+
+.audio-player audio {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 60px 0 60px;
+    outline: none;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.track-item.active {
+    background-color: #e0f7fa;
+    border: 2px solid #00bcd4;
+    box-shadow: 5px 5px 6px rgba(0, 188, 212, 0.3);
+}
+
+.player-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.track-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    margin: 0;
+    margin: 0 0 10px 60px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+}
+
+.player-controls {
+    display: flex;
+    gap: 10px;
+    margin: 0 60px 10px 0px;
+}
+
+.minimize-button,
+.close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.minimize-button img,
+.close-button img {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+}
+
+.audio-player.minimized {
+    bottom: -100px;
+    transition: bottom 0.3s ease-in-out;
+}

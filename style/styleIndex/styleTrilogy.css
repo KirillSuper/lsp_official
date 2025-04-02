@@ -1,0 +1,58 @@
+/* styleTrilogy.css */
+.trilogy {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.trilogy h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.trilogy-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.trilogy-item {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.trilogy-item a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.trilogy-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.trilogy-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.trilogy-item:hover {
+    transform: scale(1.05);
+}
+
+.trilogy-item:hover img {
+    transform: scale(1.05);
+}

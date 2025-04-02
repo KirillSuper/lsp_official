@@ -1,0 +1,119 @@
+.albums-scroll {
+    padding: 40px;
+    background-image: url('./../../images/fons/fon_alboms.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+.albums-scroll h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-gallery {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-gallery .swiper-container {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.carousel-gallery .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+}
+
+.carousel-gallery .album-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.carousel-gallery .album-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.carousel-gallery .album-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 5px 0 0 0;
+    padding: 5px;
+    color: #333;
+}
+
+.carousel-gallery .album-item .artist {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #666;
+    margin: 0;
+    padding: 0 5px 5px 5px;
+}
+
+.carousel-gallery .album-item:hover {
+    transform: scale(1.05);
+}
+
+.carousel-gallery .swiper-button-prev,
+.carousel-gallery .swiper-button-next {
+    color: #666;
+    background: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+
+.carousel-gallery .swiper-button-prev:hover,
+.carousel-gallery .swiper-button-next:hover {
+    color: #999;
+}
+
+.carousel-gallery .swiper-button-prev::after,
+.carousel-gallery .swiper-button-next::after {
+    font-size: 30px;
+}
+
+.carousel-gallery .swiper-pagination {
+    position: relative;
+    margin-top: 20px;
+}
+
+.carousel-gallery .swiper-pagination-bullet {
+    background: #666;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+}
+
+.carousel-gallery .swiper-pagination-bullet-active {
+    background: #999;
+}
+
+.album-item a {
+    text-decoration: none;
+    color: inherit;
+}
